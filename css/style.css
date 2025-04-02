@@ -1,6 +1,8 @@
 body {
     margin: 0;
+    font-family: "Racing Sans One", sans-serif;
 }
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -8,12 +10,13 @@ body {
 
 nav {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: red;
 }
 
-.navbar{
+.navbar {
     display: flex;
     gap: 50px;
     align-items: center;
@@ -22,23 +25,95 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     align-items: center;
     font-size: larger;
+    width: 100px;
+    text-align: center;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 40%;
+a:hover {
+    color: black;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav_logo{
+    display: flex;
+    gap: 10px;
+    flex-direction:row-reverse;
+    align-items: center;
 }
 
 .news-title {
     text-align: center;
 }
 
-.standings-title{
-    text-align: center  ;
+.standings-title {
+    text-align: center;
+    padding: 25px;
+    font-size: 55px;
+}
+
+.constructors-title {
+    text-align: center;
+}
+
+.section_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+}
+
+.news_date {
+    text-align: center;
+    color: red;
+}
+
+.image_news {
+    display: flex;
+    justify-content: center;
+}
+
+.news_card_title {
+    text-align: center;
+}
+
+div.nav_logo p {
+    color: white;
+    font-size: 30px;
+}
+
+img {
+    width: 35vh;
+    height: 35vh;
+    object-fit: cover; 
+    border-radius: 5%;
+}
+
+table{
+    width: 100%;
+    padding: 15px;
+    border-collapse: collapse;
+}
+
+tr th {
+    text-align: left;
+    padding: 25px 0px 25px 25px;
+    gap: 10px;
+    font-size: 30px;
+}
+
+tr.table_highlight{
+    background-color: lightgray;
+}
+
+td {
+    text-align: left;
+    padding: 25px 0px 25px 25px;
+    font-size: 25px;
 }
 
 footer {

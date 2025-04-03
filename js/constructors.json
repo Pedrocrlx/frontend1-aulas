@@ -1,0 +1,16 @@
+{
+    "constructors": [
+        {
+            "id": "1",
+            "position": "1",
+            "team": "Ferrari",
+            "points": "76"
+        },
+        {
+            "id": "2",
+            "position": "2",
+            "team": "Red Bull Racing",
+            "points": "65"
+        }
+    ]
+}

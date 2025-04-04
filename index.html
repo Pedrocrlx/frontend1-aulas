@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/f1_icon.png">
-    <title>F1 NEWS</title>
+    <title>F1 News</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,13 +19,11 @@
     <header>
         <nav>
             <div class="nav_logo">
-                <p>NEWS</p>
                 <img src="./img/F1_75_Logo.png" class="logo" alt="F1 Blog">
             </div>
             <div class="navbar">
-                <a href="#">Home</a>
-                <a href="./drivers_standings.html">Drivers Standings</a>
-                <a href="#">Drivers</a>
+                <a href="./index.html">Home</a>
+                <a href="./standings.html">Standings</a>
                 <a href="#">Rules</a>
             </div>
         </nav>
@@ -34,14 +32,14 @@
         <div class="container">
             <section class="news">
                 <div>
-                    <h1 class="news-title">F1 NEWS</h1>
+                    <h1 class="news-title">F1 NEWS 📰</h1>
                     <div class="section_cards">
                         <div class="news_card">
                             <div class="image_news">
                                 <img src="./img/LewisHamilton.jpeg" alt="News 1">
                             </div>
-                            <h2 class="news_card_title" id="title">Hamilton wins the British GP</h2>
-                            <p class="news_card_text" id="description">Hamilton wins the British GP for the 8th time in
+                            <h2 class="news_card_title" id="news_title"></h2>
+                            <p class="news_card_text" id="news_description">Hamilton wins the British GP for the 8th time in
                                 his career.</p>
                             <p class="news_date" id="date">02-04-25</p>
                         </div>
@@ -65,55 +63,6 @@
                     </div>
                 </div>
             </section>
-            <section class="constructors-standings">
-                <div>
-                    <h2 class="constructors-title">Constructors Standings</h2>
-                </div>
-                <div>
-                    <table>
-                        <tr>
-                            <th>Position</th>
-                            <th>Team</th>
-                            <th>Points</th>
-                        </tr>
-                        <tr class="table_highlight">
-                            <td>1</td>
-                            <td>Mercedes</td>
-                            <td>25</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Red Bull</td>
-                            <td>18</td>
-                        </tr>
-                        <tr class="table_highlight">
-                            <td>3</td>
-                            <td>Aston Martin</td>
-                            <td>15</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Ferrari</td>
-                            <td>12</td>
-                        </tr>
-                        <tr class="table_highlight">
-                            <td>5</td>
-                            <td>McLaren</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Alpine</td>
-                            <td>1</td>
-                        </tr>
-                        <tr class="table_highlight">
-                            <td>7</td>
-                            <td>Alfa Romeo</td>
-                            <td>0</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
         </div>
     </main>
     <footer>
@@ -121,6 +70,7 @@
         <p>Copyright © 2025. All rights are reserved.</p>
     </footer>
     <script src="./js/script.js" defer></script>
+    <script src="./js/admin.js" defer></script>
 </body>
 
 </html>

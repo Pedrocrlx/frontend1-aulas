@@ -40,10 +40,10 @@ a:hover {
     height: 50px;
 }
 
-.nav_logo{
+.nav_logo {
     display: flex;
     gap: 10px;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -56,7 +56,7 @@ a:hover {
 .standings-title {
     text-align: center;
     padding: 25px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .constructors-title {
@@ -65,7 +65,11 @@ a:hover {
     font-size: 50px;
 }
 
-.section_cards{
+.constructors-standings {
+    padding: 25px;
+}
+
+.section_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 150px;
@@ -85,6 +89,14 @@ a:hover {
     text-align: center;
 }
 
+.news-card {
+    padding-top: 10px;
+}
+
+.image_news{
+    padding-top: 15px;
+}
+
 div.nav_logo p {
     color: white;
     font-size: 30px;
@@ -93,11 +105,11 @@ div.nav_logo p {
 img {
     width: 35vh;
     height: 35vh;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 5%;
 }
 
-table{
+table {
     width: 100%;
     padding: 15px;
     border-collapse: collapse;
@@ -107,17 +119,17 @@ tr th {
     text-align: left;
     padding: 25px 0px 25px 25px;
     gap: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-tr.table_highlight{
+tr.table_highlight {
     background-color: lightgray;
 }
 
 td {
     text-align: left;
     padding: 25px 0px 25px 25px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 footer {
@@ -128,4 +140,36 @@ footer {
     background-color: rgb(21 21 30);
     color: white;
     padding: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .section_cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .news_card {
+        text-align: center;
+    }
+
+    td {
+        text-align: left;
+        padding: 16px 0px 16px 16px;
+        font-size: small;
+    }
+
+    tr th {
+        padding: 16px 0px 16px 16px;
+        font-size: small;
+    }
+
+    .nav_logo {
+        justify-content: center;
+    }
 }

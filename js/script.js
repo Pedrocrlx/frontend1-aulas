@@ -30,14 +30,18 @@ async function fetchNews() {
     try {
         const response = await fetch("js/news.json");
         const data = await response.json();
-        document.getElementById("title").textContent = data.news[0].title;
-        document.getElementById("description").textContent = data.news[0].description;
+        localStorage.getItem("news_title");
+        localStorage.getItem("news_description");
         document.getElementById("date").textContent = data.news[0].date;
     } catch (error) {
-        console.error(error)
+        console.error(error);
     }
 }
 fetchNews();
+
+//JA PASSAS POR LOCAL STORAGE, MAS AINDA NAO ESTA A SER MOSTRADO NO INDEX
+
+//LINHA 33 E 34
 
 const postNews = [news];
 const postDriversStandings = [drivers_standings];

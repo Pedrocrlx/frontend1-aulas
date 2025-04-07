@@ -26,22 +26,28 @@ console.log(json.date);
 console.log("----João EX ta aqui----");
 //JSON EX A
 
+document.addEventListener("DOMContentLoaded", function () {
+    fetchNews();
+});
+
 async function fetchNews() {
     try {
         const response = await fetch("js/news.json");
         const data = await response.json();
-        localStorage.getItem("news_title");
-        localStorage.getItem("news_description");
-        document.getElementById("date").textContent = data.news[0].date;
+        console.log(data.news[0].title);
+        renderNews(data);
     } catch (error) {
         console.error(error);
     }
 }
-fetchNews();
 
-//JA PASSAS POR LOCAL STORAGE, MAS AINDA NAO ESTA A SER MOSTRADO NO INDEX
+function renderNews(data) {
+    const newsTitle = document.getElementById("news_title");
+    newsTitle.innerHTML = data.news[0].title;
+    
+}
 
-//LINHA 33 E 34
+renderNews();
 
 const postNews = [news];
 const postDriversStandings = [drivers_standings];

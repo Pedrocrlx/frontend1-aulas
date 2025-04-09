@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     displayNews(news);
 });
 
-function displayNews(news) {
+export function displayNews(news) {
     const newsList = document.getElementById("news_section");
     news.forEach((post) => {
         const postNews = document.createElement("div");

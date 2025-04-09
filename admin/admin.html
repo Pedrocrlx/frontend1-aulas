@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/f1_icon.png">
     <title>F1 News Admin</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -25,12 +25,17 @@
                 <input type="text" id="news_description" placeholder="Description" required>
                 <button type="submit">Add News</button>
             </form>
+            <form id="remove_news_form">
+                <input type="text" id="remove_news_id" placeholder="ID" required>
+                <button type="submit">Remove News</button>
+            </form>
+
             <div id="nameDiv">
 
             </div>
         </div>
     </main>
-    <script src="./js/adminMockAPI.js" type="module" defer></script>
+    <script src="./js/admin.js" type="module" defer></script>
 </body>
 
 </html>

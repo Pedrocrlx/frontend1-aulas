@@ -18,3 +18,14 @@ export const createNews = async (post) => {
     const data = await response.json();
     return data;
 };
+
+export const deleteNews = async (id) => {
+    const response = await fetch(apiURL + "news/" + id, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+    const data = await response.json();
+    return data;
+};

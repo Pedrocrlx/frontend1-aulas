@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/f1_icon.png">
+    <link rel="icon" type="image/x-icon" href="../img/f1_icon.png">
     <title>F1 News Admin</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -23,14 +23,14 @@
             <form>
                 <input type="text" id="news_title" placeholder="Title" required>
                 <input type="text" id="news_description" placeholder="Description" required>
-                <button type="submit" onclick="createNews()">Add News</button>
+                <button type="submit" onclick="addNews()">Add News</button>
             </form>
             <div id="nameDiv">
-                
+
             </div>
         </div>
     </main>
-    <script src="./js/admin.js" defer></script>
+    <script src="./js/adminLocalStorage.js" defer></script>
 </body>
 
 </html>

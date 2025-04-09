@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <br>
         <div class="news_card">
             <div class="image_news">
-                <img src="./img/LewisHamilton.jpeg" alt="News 1">
+                <img src="../img/LewisHamilton.jpeg" alt="News 1">
             </div>
             <h2 class="news_card_title">${localStorage.getItem("news_title")}</h2>
             <p class="news_card_text">${localStorage.getItem("news_description")}</p>

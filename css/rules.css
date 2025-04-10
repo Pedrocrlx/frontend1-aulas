@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: red;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-size: larger;
+    width: 100px;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.rules-faq h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+div.faq-item {
+    padding: 20px;
+}
+
+.rules-faq {
+    padding: 25px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(21 21 30);
+    color: white;
+    padding: 15px;
+}

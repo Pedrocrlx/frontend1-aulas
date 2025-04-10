@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    font-family: "Racing Sans One", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -72,7 +74,8 @@ a:hover {
 .section_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 150px;
+    gap: 50px;
+    padding-bottom: 35px;
 }
 
 .news_date {
@@ -89,12 +92,16 @@ a:hover {
     text-align: center;
 }
 
-.news-card {
-    padding-top: 10px;
+.news_card_date {
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    width: 110px;
 }
 
-.image_news{
-    padding-top: 15px;
+.news-card {
+    padding: 20px;
 }
 
 div.nav_logo p {
@@ -103,8 +110,8 @@ div.nav_logo p {
 }
 
 img {
-    width: 35vh;
-    height: 35vh;
+    width: 40vh;
+    height: 40vh;
     object-fit: cover;
     border-radius: 5%;
 }

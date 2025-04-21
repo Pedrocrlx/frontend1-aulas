@@ -33,10 +33,13 @@ const populateStandingsTable = async () => {
         // Preenche a tabela com os dados da API
         driverStandings.forEach((standing, index) => {
             const row = document.createElement("tr");
+            if (index % 2 === 0) {
+                row.className = "table_highlight";
+            }
             row.innerHTML = `
-                <td>${standing.position}</td>
+                <td>${standing["@attributes"].position}</td>
                 <td>${standing.Driver.GivenName["#text"]} ${standing.Driver.FamilyName["#text"]}</td>
-                <td>${standing.points}</td>
+                <td>${standing["@attributes"].points}</td>
             `;
             tableBody.appendChild(row);
         });

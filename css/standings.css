@@ -49,50 +49,42 @@ a:hover {
     align-items: center;
 }
 
-.news-title {
+.standings-title {
+    text-align: center;
+    font-size: 45px;
+}
+
+.constructors-title {
     text-align: center;
     padding: 25px;
     font-size: 50px;
 }
 
-.section_cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    padding-bottom: 35px;
+.constructors-standings {
+    padding: 25px;
 }
 
-.news_date {
-    color: red;
+table {
+    width: 100%;
+    padding: 15px;
+    border-collapse: collapse;
 }
 
-.image_news {
-    display: flex;
-    justify-content: center;
+tr th {
+    text-align: left;
+    padding: 25px 0px 25px 25px;
+    gap: 10px;
+    font-size: 25px;
 }
 
-.news_card_title {
-    text-align: center;
+tr.table_highlight {
+    background-color: lightgray;
 }
 
-.news_card_date {
-    color: red;
-}
-
-.news-card {
-    padding: 20px;
-}
-
-div.nav_logo p {
-    color: white;
-    font-size: 30px;
-}
-
-img {
-    width: 40vh;
-    height: 40vh;
-    object-fit: cover;
-    border-radius: 5%;
+td {
+    text-align: left;
+    padding: 25px 0px 25px 25px;
+    font-size: 20px;
 }
 
 footer {
@@ -107,12 +99,6 @@ footer {
 
 @media (max-width: 768px) {
 
-    .section_cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
-    }
-
     nav {
         display: block;
     }
@@ -121,7 +107,31 @@ footer {
         text-align: center;
     }
 
+    td {
+        text-align: left;
+        padding: 16px 0px 16px 16px;
+        font-size: small;
+    }
+
+    tr th {
+        padding: 16px 0px 16px 16px;
+        font-size: small;
+    }
+
     .nav_logo {
         justify-content: center;
+    }
+
+    .drivers-standings {
+        padding: 20px;
+    }
+
+    .constructors-standings {
+        padding: 10px;
+    }
+
+    .standings-title {
+        text-align: center;
+        font-size: 45px;
     }
 }

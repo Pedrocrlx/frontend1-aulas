@@ -60,3 +60,15 @@ footer {
     color: white;
     padding: 15px;
 }
+
+
+@media (max-width: 768px) {
+
+    nav {
+        display: block;
+    }
+
+    .nav_logo {
+        justify-content: center;
+    }
+}

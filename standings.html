@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/f1_icon.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/standings.css">
     <title>Drivers Standings</title>
 </head>
 
@@ -32,7 +32,7 @@
         <div class="container">
             <section class="drivers-standings">
                 <div>
-                    <h2 class="standings-title">🏎️ 2025 Standings</h2>
+                    <h2 class="standings-title">2025 Standings</h2>
                     <h2 class="standings-title">Drivers 🏁</h2>
                 </div>
                 <div>
@@ -219,10 +219,11 @@
     </main>
     <footer>
         <p>@Pedro Santos</p>
-        <p>Copyright © 2025. All rights are reserved.</p>
+        <p>Copyright © <span id="currentYear"></span>. All rights are reserved.</p>
     </footer>
     <script src="./api/standing_driversAPI.js" type="module" defer></script>
     <script src="./api/standing_constructorsAPI.js" type="module" defer></script>
+    <script src="./js/footerYearDate.js" defer></script>
 </body>
 
 </html>

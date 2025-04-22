@@ -16,8 +16,7 @@ export function displayNews(news) {
             </div>
             <h2 class="news_card_title">${post.title}</h2>
             <p class="news_card_text">${post.description}</p>
-            <div class="news_card_date">
-            <p>${new Date(
+            <p class="news_card_date">${new Date(
             post.createdAt
         ).toLocaleDateString("pt-PT", {
             day: "2-digit",
@@ -25,7 +24,6 @@ export function displayNews(news) {
             year: "numeric",
         })
             }</p >
-            </div>
     `;
         newsList.appendChild(postNews);
     });

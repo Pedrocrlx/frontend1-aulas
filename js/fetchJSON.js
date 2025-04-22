@@ -6,10 +6,6 @@ const news = {
 
 document.addEventListener("DOMContentLoaded", function () {
     fetchNews();
-    // Obtém o ano atual
-    const currentYear = new Date().getFullYear();
-    // Preenche o ano no elemento com o id "currentYear"
-    document.getElementById("currentYear").textContent = currentYear;
 });
 
 async function fetchNews() {
@@ -30,7 +26,6 @@ function renderNews(data) {
     newsDescription.innerHTML = data.news[0].description;
     newsDate.innerHTML = data.news[0].date;
 }
-
 
 //JSON EX A
 const mock = JSON.stringify(news);

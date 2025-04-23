@@ -7,13 +7,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         const news = {
             title: document.getElementById("news_title").value,
             description: document.getElementById("news_description").value,
+            image: document.getElementById("news_image").value,
         };
         const response = await createNews(news);
         console.log(response);
     });
-});
 
-document.addEventListener("DOMContentLoaded", async () => {
     const removeNewsForm = document.getElementById("remove_news_form");
     removeNewsForm.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -24,7 +23,3 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log(response);
     });
 });
-
-
-
-

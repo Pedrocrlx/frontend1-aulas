@@ -12,7 +12,7 @@ export function displayNews(news) {
         postNews.classList.add("news_card");
         postNews.innerHTML = `
             <div class="image_news">
-                <img src="./img/LewisHamilton.jpeg" alt="" class="news_card_image">
+                <img src="${post.image}" alt="" class="news_card_image">
             </div>
             <h2 class="news_card_title">${post.title}</h2>
             <p class="news_card_text">${post.description}</p>

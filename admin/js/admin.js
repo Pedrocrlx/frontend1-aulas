@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const news = {
             title: document.getElementById("news_title").value,
             description: document.getElementById("news_description").value,
-            image: document.getElementById("news_image").value,
         };
         const response = await createNews(news);
         console.log(response);

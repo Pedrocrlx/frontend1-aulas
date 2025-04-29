@@ -16,19 +16,9 @@ function diplayCarrousel(news) {
         const postNews = document.createElement("div");
         postNews.classList.add("splide__slide");
         postNews.innerHTML = `
-            <div class="image_news">
-                <img src="${post.image}" class="news_card_image">
-            </div>
+            <img src="${post.image}" class="news_card_carousel" alt="${post.title}"/>
             <h2 class="news_card_title">${post.title}</h2>
-            <p class="news_card_text">${post.description}</p>
-            <p class="news_card_date">${new Date(
-            post.createdAt
-        ).toLocaleDateString("pt-PT", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-        })
-            }</p>
+            <p class="news_text_carousel">${post.description}</p>
     `;
         document.querySelector(".splide__list").appendChild(postNews);
     });
@@ -43,7 +33,7 @@ export function displayNews(news) {
         postNews.classList.add("news_card");
         postNews.innerHTML = `
             <div class="image_news">
-                <img src="${post.image}">
+                <img src="${post.image}" alt="${post.title}"/>
             </div>
             <h2 class="news_card_title">${post.title}</h2>
             <p class="news_card_text">${post.description}</p>

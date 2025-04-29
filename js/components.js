@@ -15,14 +15,14 @@ class SharedNav extends HTMLElement {
         this.innerHTML = `
         <nav>
             <div class="nav_logo">
-                <img src="./img/F1_75_Logo.png" class="logo" alt="F1 Blog">
+                <img src="./img/45334-Sticker-Formula-1-nouveau-logo-F1-removebg-preview.png" class="logo" alt="F1 Blog">
             </div>
             <div class="navbar">
                 <a href="./index.html">Home</a>
                 <a href="./standings.html">Standings</a>
                 <a href="./rules.html">Rules</a>
             </div>
-        </nav >
+        </nav>
         `;
     }
 }

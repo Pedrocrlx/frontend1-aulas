@@ -43,6 +43,7 @@ a:hover {
 .logo {
     width: 200px;
     height: 150px;
+    object-fit: cover;
 }
 
 .nav_logo {
@@ -56,6 +57,7 @@ a:hover {
     text-align: center;
     padding: 25px;
     font-size: 50px;
+    border-bottom: solid 2px red;
 }
 
 .section_cards {
@@ -82,15 +84,18 @@ a:hover {
     color: red;
 }
 
-.news-card {
+div.news_card {
     padding: 25px;
 }
 
 div.news_card:hover {
     cursor: pointer;
-    background-color: black;
-    color: white;
-    border-radius: 0% 0% 3% 3%;
+}
+
+div.news_card_content:hover {
+    border: solid 1px red;
+    border-left: hidden;
+    border-top: hidden;
 }
 
 .news_card_carousel {
@@ -109,11 +114,16 @@ div.nav_logo p {
     font-size: 30px;
 }
 
-img {
+.news_image {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 0% 0% 5% 5%;
+}
+
+.news_image_carousel {
+    width: 100%;
+    object-fit: cover;
 }
 
 footer {
@@ -136,6 +146,10 @@ footer {
 
     nav {
         display: block;
+    }
+
+    .navbar {
+        gap: 0px;
     }
 
     .news_card {

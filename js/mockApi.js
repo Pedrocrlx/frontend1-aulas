@@ -5,20 +5,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     displayNews(news);
     diplayCarrousel(news);
     // Initialize the carousel splide.js
-    var splide = new Splide('.splide');
-    splide.mount();
+    new Splide('.splide', {
+        perPage: 3,
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
+        }
+    }).mount();
 });
 
-
 function diplayCarrousel(news) {
-    const slicedNews = news.slice(0, 3);
+    const slicedNews = news.slice(0, 6);
     slicedNews.forEach((post) => {
         const postNews = document.createElement("div");
         postNews.classList.add("splide__slide");
         postNews.innerHTML = `
-            <img src="${post.image}" class="news_card_carousel" alt="${post.title}"/>
+            <img src="${post.image}" class="news_image_carousel" alt="${post.title}"/>
             <h2 class="news_card_title">${post.title}</h2>
-            <p class="news_text_carousel">${post.description}</p>
     `;
         document.querySelector(".splide__list").appendChild(postNews);
     });
@@ -32,9 +36,9 @@ export function displayNews(news) {
         const postNews = document.createElement("div");
         postNews.classList.add("news_card");
         postNews.innerHTML = `
-            <div class="image_news">
-                <img src="${post.image}" alt="${post.title}"/>
-            </div>
+            
+            <img src="${post.image}" class="news_image" alt="${post.title}"/>
+            <div class="news_card_content">
             <h2 class="news_card_title">${post.title}</h2>
             <p class="news_card_text">${post.description}</p>
             <p class="news_card_date">${new Date(
@@ -45,6 +49,7 @@ export function displayNews(news) {
             year: "numeric",
         })
             }</p>
+            </div>
     `;
         newsList.appendChild(postNews);
     });

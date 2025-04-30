@@ -12,7 +12,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap">
     <link rel="icon" type="image/x-icon" href="./img/f1_icon.png">
     <title>F1 News</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -23,22 +23,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <custom-nav></custom-nav>
     </header>
     <main>
-        <section class="news_header">
-            <section class="splide" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                    </ul>
-                </div>
-            </section>
-        </section>
+
         <div class="container">
+            <section class="news_header">
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+
+                        </ul>
+                    </div>
+                </section>
+            </section>
             <section class="news">
                 <div>
-                    <h1 class="news-title">F1 NEWS</h1>
+                    <h1 class="news-title">F1 News</h1>
                     <div class="section_cards" id="news_section">
                         <div class="news_card">
                             <div class="image_news">
-                                <img src="./img/LewisHamilton.jpeg" alt="News 1">
+                                <img src="./img/LewisHamilton.jpeg" class="news_image" alt="News 1">
                             </div>
                             <h2 class="news_card_title" id="news_title"></h2>
                             <p class="news_card_text" id="news_description">Hamilton wins the British GP for the 8th
@@ -57,7 +59,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="./js/components.js" defer></script>
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
+" defer></script>
 </body>
 
 </html>

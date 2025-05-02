@@ -26,7 +26,6 @@ function diplayCarrousel(news) {
     `;
         document.querySelector(".splide__list").appendChild(postNews);
     });
-    console.log(slicedNews, "CAROUSEL NEWS");
 }
 
 export function displayNews(news) {

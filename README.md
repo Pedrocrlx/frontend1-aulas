@@ -2,13 +2,25 @@
 
 # Descrição do website: Para pessoas que gostam de acompanhar F1.
 
-Requisitos
-Converter objecto javascript para json e vice versa - 
-Guardar e ler informação da local storage - Reference
-Inserir informação através de formulário e mostrar informação após submeter Reference
+Requisitos:
+
+Converter objecto javascript para json e vice versa: 
+
+**/js/fetchJSON.js**
+
+Guardar e ler informação da local storage:
+
+**/admin/js/adminLocalStorage.js** - **/admin/adminLocalStorage.html**
+
+Inserir informação através de formulário e mostrar informação após submeter:
+
+**/admin/js/adminLocalStorage.js** - **/admin/adminLocalStorage.html**
+
 Fazer fetch de uma api e mostrar resultados no ecrã:
 
-**/js/mockApi.js** - **/api/standing_contructorsAPI.js** 
+**/js/mockApi.js** - **/api/standing_constructorsAPI.js** 
+**/js/mockApi.js** - **/api/standing_driversAPI.js** 
+
 
 Através de um input, inserir um termo de procura e apresentar resultados de uma API pública Reference
 
@@ -30,8 +42,8 @@ Gerar report do Lighthouse e colocar screenshot no repositório do projeto. Ter 
 
 Pelo menos 1 exemplo de cada CRUD operation:
 
-**/admin/js/admin.js** - **/admin/admin.html** 
-**/api/api.js** 
+**/admin/js/admin.js** - **/admin/admin.html**
+**/api/api.js** - **index.html**
 
 Bonus
 Implementação dos requisitos ao contexto do projeto em si
